@@ -1,0 +1,173 @@
+// .no-file {
+//   width: 92%;
+//   height: 90vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+
+//   .no-file-text {
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     color: #47466d;
+//   }
+// }
+
+.employee-list-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  flex-direction: column;
+
+  .employee-list-heading {
+    margin: 0;
+    width: 92%;
+    margin: 30px 0 20px 0;
+    text-align: start;
+  }
+
+  .employee-list-wrapper {
+    width: 92%;
+    height: auto;
+    margin: 0 20px;
+    // background-color: #efefef;
+    border-radius: 0.5em;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 5px 0;
+
+    .employee-list-container {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      .employee-list-heading {
+        margin: 0;
+        // padding: 20px 0 0 20px;
+      }
+
+      .employee-list-table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        background-color: transparent;
+
+        .table-header {
+          background-color: #ececec;
+          border-radius: 5px;
+          font-weight: bold;
+          height: 50px;
+
+          .table-row {
+            .column-name {
+              text-align: left;
+              width: 20%;
+            }
+          }
+        }
+
+        .table-body {
+          height: auto;
+          .table-row {
+            border-bottom: 1px solid #ddd;
+
+            .column-name-data,
+            .column-id,
+            .column-worked-hours,
+            .column-late-hours,
+            .column-early-leave-hours,
+            .column-overtime,
+            .column-action {
+              padding: 18px 10px;
+              text-align: center;
+            }
+
+            .column-name-data {
+              cursor: pointer;
+            }
+
+            .initial {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 10px;
+              padding: 12px 0;
+
+              .employee-name {
+                margin: 0;
+                text-align: start;
+              }
+            }
+
+            .initial-circle {
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+              font-size: 12px;
+              aspect-ratio: 1/1;
+            }
+
+            .eye-icon {
+              font-size: 20px;
+              color: #47466d;
+              cursor: pointer;
+            }
+          }
+
+          .no-data {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .load-more-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 5px 0 20px 0;
+
+        .load-more-button,
+        .show-less-button {
+          width: 15%;
+          padding: 10px 20px;
+          background-color: #47466d;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-size: 15px;
+        }
+
+        .load-more-button:hover,
+        .show-less-button:hover {
+          background-color: #355C7D;
+        }
+
+        .load-more-button:disabled {
+          background-color: #d1d1d1;
+          cursor: not-allowed;
+        }
+
+        .show-less-button {
+          background-color: #F67280;
+        }
+
+        .show-less-button:hover {
+          background-color: #cf606b;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.file-history-container {
+  height: 100%;
+  width: 92%;
+  margin-top: 30px;
+  border-radius: 0.5em;
+
+  .file-history-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .searchbar-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #e4e4e498;
+
+      .search-input-container {
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 25vw;
+        display: flex;
+        justify-content: space-between;
+        transition: box-shadow 0.3s ease;
+
+        &:focus-within {
+          border: none;
+          box-shadow: rgba(231, 231, 231, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .search-input {
+          border: none;
+          outline: none;
+          width: 100%;
+          background-color: transparent;
+          color: #000;
+          font-size: 16px;
+        }
+
+        .search-icon {
+          font-size: 20px;
+          color: #c0c0c0;
+        }
+      }
+    }
+
+    ::placeholder {
+      color: #b9b9b9;
+    }
+  }
+
+  .files-container {
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .file {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      padding: 15px;
+      border-radius: 5px;
+
+      .file-icon-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .file-name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+
+      .file-date-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .file-size,
+        .file-date {
+          color: #7e7e7e;
+        }
+
+        .view,
+        .delete {
+          cursor: pointer;
+        }
+
+        .view {
+          color: #007bff;
+        }
+
+        .delete {
+          color: #e93042;
+        }
+      }
+    }
+  }
+}
+
+.delete-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .delete-modal-description {
+    color: #7e7e7e;
+    font-size: 15px;
+  }
+
+  .delete-modal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    .yes-button,
+    .no-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      // background-color: #007bff;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .yes-button {
+      background-color: #50c878;
+    }
+
+    .no-button {
+      background-color: #e93042;
+    }
+  }
+}
+
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

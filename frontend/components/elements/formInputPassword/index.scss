@@ -1,0 +1,52 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #242424;
+  }
+
+  .password-input {
+    border: none;
+    border-left: 4px solid #47466d;
+    background-color: #ecececd2;
+    width: 100%;
+    position: relative;
+
+    .form-input-password {
+      padding: 10px 15px;
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .eye-button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #47466d;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}

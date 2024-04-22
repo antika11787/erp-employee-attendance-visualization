@@ -1,0 +1,167 @@
+@use "@/styles/_mixins.scss" as *;
+
+.home-container {
+  height: auto;
+  @include page-body;
+
+  .top-container {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+    .calendar {
+      width: 30%;
+      height: 18rem;
+      border-radius: 0.5em;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      overflow-y: auto;
+
+      .date-highlight {
+        background-color: #ebebeb;
+      }
+    }
+
+    .params {
+      width: 60%;
+      // max-width: 600px;
+      height: 18rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      gap: 2vw;
+      flex-wrap: wrap;
+      // background-color: #ececec;
+
+      .params-box {
+        // background-color: #efefef;
+        border-radius: 0.5em;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+          rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+
+      .check-in,
+      .total-wrapper {
+        width: 47%;
+        height: 8rem;
+      }
+
+      .total-wrapper {
+        display: flex;
+        align-items: center;
+
+        .total-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          position: relative;
+
+          .total-employee-update-icon {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+          }
+
+          .total {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .total-employee {
+              margin: 0;
+              font-size: 1.1rem;
+            }
+
+            .total-number {
+              margin: 0;
+              font-size: 1.5rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .data-card {
+    // background-color: #efefef;
+    border-radius: 0.5em;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+
+  .check-in-chart {
+    width: 61.3%;
+    max-width: 745px;
+    height: 22rem;
+  }
+
+  .check-in-doughnut {
+    width: 28.5%;
+    height: 22rem;
+  }
+
+  .pie-chart {
+    width: 25%;
+    height: 22rem;
+    margin-bottom: 50px;
+  }
+
+  .overview {
+    width: 92%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .overview-text {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .overview-dropdown-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .overview-dropdown-text {
+        margin: 0;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .overview-heading-dropdown {
+        margin: 0;
+        width: 130px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+        // background-color: #efefef;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+          rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+    }
+  }
+
+  .bar-chart {
+    width: 65%;
+    height: 22rem;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+}

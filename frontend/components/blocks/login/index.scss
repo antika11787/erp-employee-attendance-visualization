@@ -1,0 +1,142 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+  .login-container {
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .login-left {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .login-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+
+      .login-header {
+        font-size: 30px;
+        font-weight: bold;
+        color: #47466d;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+
+        .login-form-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .login-form-label {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          .login-form-input {
+            border: none;
+            border-left: 4px solid #47466d;
+            padding: 10px 15px;
+            background-color: #ecececd2;
+            font-size: 16px;
+            outline: none;
+          }
+
+          .login-password-input {
+            border: none;
+            border-left: 4px solid #47466d;
+            background-color: #ecececd2;
+            width: 100%;
+            position: relative;
+
+            .login-form-input-password {
+              padding: 10px 15px;
+              border: none;
+              background-color: transparent;
+              font-size: 16px;
+              outline: none;
+            }
+
+            .login-eye-button {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+              cursor: pointer;
+              color: #47466d;
+              outline: none;
+              border: none;
+              background-color: transparent;
+              font-size: 16px;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: color 0.2s ease-in-out;
+            }
+          }
+
+          .login-error-message {
+            color: red;
+            font-size: 14px;
+            font-weight: normal;
+          }
+        }
+
+        .forgot-password-container {
+          .forgot-password {
+            text-decoration: none;
+            color: #47466d;
+          }
+        }
+
+        .login-submit-button-container {
+          width: 100%;
+          height: 38px;
+          background-color: #47466d;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          .login-submit-button {
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ececec;
+            letter-spacing: 2px;
+            cursor: pointer;
+          }
+        }
+
+        .signup-form-text {
+          text-align: center;
+
+          .signup-form-link {
+            text-decoration: none;
+            color: #47466d;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

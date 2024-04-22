@@ -1,0 +1,31 @@
+// .searchbar-container {
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+
+//   .search-input-container {
+//     border: 1px solid #ddd;
+//     padding: 10px;
+//     border-radius: 5px;
+//     min-width: 25vw;
+//     display: flex;
+//     justify-content: space-between;
+//     transition: box-shadow 0.3s ease;
+
+//     &:focus-within {
+//       border: none;
+//       box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+//     }
+
+//     .search-input {
+//       border: none;
+//       outline: none;
+//       width: 100%;
+//       background-color: transparent;
+//     }
+
+//     .search-icon {
+//       font-size: 20px;
+//     }
+//   }
+// }

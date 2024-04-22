@@ -1,0 +1,54 @@
+.single-employee-data {
+  //   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  //   background-color: #c2c2c2;
+
+  .image-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .initial-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+
+  .filter-wrapper {
+    display: flex;
+    gap: 10px;
+
+    .filters {
+      display: flex;
+      gap: 2px;
+
+      .filters-text,
+      .filter-icon {
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+    .single-employee-dropdown {
+      margin: 0;
+      width: 130px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      padding: 5px;
+      // background-color: #efefef;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.clock-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+
+    .time-container {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      color: #969696;
+
+      .clock-icon {
+        font-size: 1.6rem;
+      }
+
+      .time {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .date-container {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      color: #272727;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  { "label": "January", "value": 160.5 },
+  { "label": "February", "value": 155.25 },
+  { "label": "March", "value": 170.75 },
+  { "label": "April", "value": 165.0 },
+  { "label": "May", "value": 168.25 },
+  { "label": "June", "value": 175.5 },
+  { "label": "July", "value": 180.75 },
+  { "label": "August", "value": 173.25 },
+  { "label": "September", "value": 165.5 },
+  { "label": "October", "value": 160.0 },
+  { "label": "November", "value": 155.75 },
+  { "label": "December", "value": 150.25 }
+]

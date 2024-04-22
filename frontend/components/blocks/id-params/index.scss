@@ -1,0 +1,33 @@
+.chartCard {
+  width: 100%;
+  // height: calc(100vh - 40px);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .chartBox {
+    width: 100%;
+    padding: 20px;
+    background: white;
+
+    .barContainer {
+      width: 95%;
+      max-width: 95%;
+      overflow-x: auto;
+
+      .containerBody {
+        height: 300px;
+        //   white-space: nowrap;
+
+        .canvas {
+          height: 100%;
+        }
+
+        &.wideContainer {
+          width: 550% !important;
+        }
+      }
+    }
+  }
+}

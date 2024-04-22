@@ -1,0 +1,151 @@
+.signup-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+  .signup-container {
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .signup-left {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .signup-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+
+      .signup-header {
+        font-size: 30px;
+        font-weight: bold;
+        color: #47466d;
+      }
+
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+
+        .signup-form-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .signup-form-label {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          .signup-form-input {
+            border: none;
+            border-left: 4px solid #47466d;
+            padding: 10px 15px;
+            background-color: #ecececd2;
+            font-size: 16px;
+            outline: none;
+          }
+
+          .signup-password-input {
+            border: none;
+            border-left: 4px solid #47466d;
+            background-color: #ecececd2;
+            width: 100%;
+            position: relative;
+
+            .signup-form-input-password {
+              padding: 10px 15px;
+              border: none;
+              background-color: transparent;
+              font-size: 16px;
+              outline: none;
+            }
+
+            .signup-eye-button {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+              cursor: pointer;
+              color: #47466d;
+              outline: none;
+              border: none;
+              background-color: transparent;
+              font-size: 16px;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: color 0.2s ease-in-out;
+            }
+          }
+
+          .error-message {
+            color: red;
+            font-size: 14px;
+            font-weight: normal;
+          }
+
+          //   .error-message::before {
+          //     content: "* ";
+          //   }
+        }
+
+        .forgot-password-container {
+          .forgot-password {
+            text-decoration: none;
+            color: #47466d;
+          }
+        }
+
+        .signup-submit-button-container {
+          width: 100%;
+          height: 38px;
+          background-color: #47466d;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          .signup-submit-button {
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ececec;
+            letter-spacing: 2px;
+            cursor: pointer;
+          }
+
+          .signup-submit-button:focus {
+            border: none;
+            outline: none;
+          }
+        }
+
+        .login-form-text {
+          text-align: center;
+
+          .login-form-link {
+            text-decoration: none;
+            color: #47466d;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[
+    { "label": "January", "worked_hours": 160.5, "late_hours": 5.25, "overtime": 10.75, "early_leave_hours": 4.5 },
+    { "label": "February", "worked_hours": 155.25, "late_hours": 8.0, "overtime": 8.5, "early_leave_hours": 4.25 },
+    { "label": "March", "worked_hours": 170.75, "late_hours": 4.5, "overtime": 12.25, "early_leave_hours": 5.0 },
+    { "label": "April", "worked_hours": 165.0, "late_hours": 6.75, "overtime": 9.25, "early_leave_hours": 3.5 },
+    { "label": "May", "worked_hours": 168.25, "late_hours": 3.25, "overtime": 11.5, "early_leave_hours": 4.0 },
+    { "label": "June", "worked_hours": 175.5, "late_hours": 2.0, "overtime": 13.75, "early_leave_hours": 3.25 },
+    { "label": "July", "worked_hours": 180.75, "late_hours": 1.75, "overtime": 15.5, "early_leave_hours": 2.75 },
+    { "label": "August", "worked_hours": 173.25, "late_hours": 3.5, "overtime": 14.0, "early_leave_hours": 2.5 },
+    { "label": "September", "worked_hours": 165.5, "late_hours": 7.0, "overtime": 10.25, "early_leave_hours": 5.25 },
+    { "label": "October", "worked_hours": 160.0, "late_hours": 9.75, "overtime": 8.0, "early_leave_hours": 3.75 },
+    { "label": "November", "worked_hours": 155.75, "late_hours": 10.25, "overtime": 6.5, "early_leave_hours": 4.0 },
+    { "label": "December", "worked_hours": 150.25, "late_hours": 12.0, "overtime": 4.25, "early_leave_hours": 3.25 }
+  ]
+  
