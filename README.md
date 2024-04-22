@@ -22,20 +22,20 @@ For backend and frontend setup, follow these instructions:
 
 ### Backend Setup
 
-1. Clone the repository: git clone <repository_name>
-2. Navigate to the backend folder: cd backend
-3. Create a `.env` file and paste the contents of `.example.env`.
+1. Open the project in VsCode
+2. Open a terminal
+3. Navigate to the backend folder: cd backend
 4. Install dependencies: npm i
 5. Install ts-node globally: npm install -g ts-node
 6. Run the backend server: npm run dev
 
 ### Frontend Setup
 
-1. Navigate to the frontend folder: cd frontend
-2. Create a `.env` file and paste the contents of `.example.env`.
+1. Open another terminal side by side
+2. Navigate to the frontend folder: cd frontend
 3. Install dependencies: npm i
 4. Run the frontend server: npm run dev
    
 ## Usage
-You'll be redirected to the sign up page after clicking on the URL. sign up with your information.
-Then log in to view the dashboard.
+1. You'll be redirected to the sign up page after clicking on the URL. sign up with your information.
+2. Then log in to view the dashboard.
