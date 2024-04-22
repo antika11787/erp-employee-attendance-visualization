@@ -132,8 +132,6 @@ class FileController {
 
       const uniqueDates = Array.from(uniqueDatesSet);
 
-      console.log("unique", uniqueDates);
-
       return res
         .status(200)
         .send(success("Unique dates fetched successfully", uniqueDates));

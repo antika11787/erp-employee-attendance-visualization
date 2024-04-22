@@ -18,38 +18,40 @@ const Sidebar = () => {
                 <h3 className="sidebar-heading-text">Attendance</h3>
             </div>
             <div className="sidebar-menu">
-                <div className={`sidebar-menu-item ${pathName.endsWith('/dashboard') ? 'active' : ''}`}>
-                    <LuClipboardList className="sidebar-menu-item-icon" />
-                    <Link
-                        href={'/dashboard'}
-                        className='sidebar-menu-item-text'>
-                        Dashboard
-                    </Link>
-                </div>
-                <div className={`sidebar-menu-item ${pathName.includes('/employee-list') ? 'active' : ''}`}>
-                    <LuUsers2 className="sidebar-menu-item-icon" />
-                    <Link
-                        href={'/employee-list'}
-                        className='sidebar-menu-item-text'>
-                        Employee List
-                    </Link>
-                </div>
-                <div className={`sidebar-menu-item ${pathName.endsWith('/upload-file') ? 'active' : ''}`}>
-                    <LuFileX className="sidebar-menu-item-icon" />
-                    <Link
-                        href={'/upload-file'}
-                        className='sidebar-menu-item-text'>
-                        Upload File
-                    </Link>
-                </div>
-                <div className={`sidebar-menu-item ${pathName.endsWith('/history') ? 'active' : ''}`}>
-                    <LuFileStack className="sidebar-menu-item-icon" />
-                    <Link
-                        href={'/history'}
-                        className='sidebar-menu-item-text'>
-                        File history
-                    </Link>
-                </div>
+                <Link
+                    href={'/dashboard'}
+                    className="sidebar-menu-link">
+                    <div className={`sidebar-menu-item ${pathName.endsWith('/dashboard') ? 'active' : ''}`}>
+                        <LuClipboardList className="sidebar-menu-item-icon" />
+                        <p className='sidebar-menu-item-text'>Dashboard</p>
+                    </div>
+                </Link>
+
+                <Link
+                    href={'/employee-list'}
+                    className="sidebar-menu-link">
+                    <div className={`sidebar-menu-item ${pathName.includes('/employee-list') ? 'active' : ''}`}>
+                        <LuUsers2 className="sidebar-menu-item-icon" />
+                        <p className='sidebar-menu-item-text'>Employee List</p>
+                    </div>
+                </Link>
+                <Link
+                    href={'/upload-file'}
+                    className="sidebar-menu-link">
+                    <div className={`sidebar-menu-item ${pathName.endsWith('/upload-file') ? 'active' : ''}`}>
+                        <LuFileX className="sidebar-menu-item-icon" />
+                        <p className='sidebar-menu-item-text'>Upload File</p>
+                    </div>
+                </Link>
+                <Link
+                    href={'/history'}
+                    className="sidebar-menu-link">
+                    <div className={`sidebar-menu-item ${pathName.endsWith('/history') ? 'active' : ''}`}>
+                        <LuFileStack className="sidebar-menu-item-icon" />
+                        <p className='sidebar-menu-item-text'>File history</p>
+
+                    </div>
+                </Link>
             </div>
         </div>
     )

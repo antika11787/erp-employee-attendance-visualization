@@ -8,7 +8,6 @@ export const UploadFileApi = async (file: any) => {
   return axiosInstanceToken
     .post("/api/v1/file/upload-file", file)
     .then((response) => {
-      console.log("re", response.data.data);
       toast.success("File uploaded successfully");
       return response.data.data;
     })
@@ -24,7 +23,6 @@ export const totalCheckInApi = async (id: string, date: any) => {
       date: date,
     })
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {
@@ -39,7 +37,6 @@ export const totalLateApi = async (id: string, date: any) => {
       date: date,
     })
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {
@@ -51,7 +48,6 @@ export const GetUniqueDatesApi = async (id: string) => {
   return axiosInstance
     .get(`/api/v1/file/get-dates/${id}`)
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {
@@ -73,7 +69,6 @@ export const FileHistoryApi = async (searchQuery?: string) => {
       `/api/v1/file/get-all-files?${queryString}`
     );
     const data = response.data;
-    // console.log("items", data.data);
 
     if (data.success === false) {
       console.log("Error: ", data.message);
@@ -92,7 +87,6 @@ export const DeleteFileApi = async (id: string) => {
   return axiosInstanceToken
     .delete(`/api/v1/file/delete-file/${id}`)
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {

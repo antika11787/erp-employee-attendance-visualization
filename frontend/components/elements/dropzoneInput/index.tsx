@@ -27,14 +27,22 @@ const DropzoneInput: React.FC<DropzoneInputProps> = ({ labelHeading, labelSub, l
             <div {...getRootProps()}>
                 <input {...getInputProps()} />
                 {isDragActive ? (
-                    <Image src={'/cloud-data.png'} alt="file-upload" height={100} width={100} className='upload-image' />
+                    <div className='upload-container'>
+                        <Image src={'/cloud-data.png'} alt="file-upload" height={100} width={100} className='upload-image' />
+                        <p className='upload-text upload-heading'>{labelHeading}</p>
+                        <p className='upload-text upload-sub'>{labelSub}</p>
+                        <p className='upload-text upload-limit'>{labelLimit}</p>
+                    </div>
                 ) : (
-                    <Image src={'/cloud-data.png'} alt="file-upload" height={100} width={100} className='upload-image' />
+                    <div className='upload-container'>
+                        <Image src={'/cloud-data.png'} alt="file-upload" height={100} width={100} className='upload-image' />
+                        <p className='upload-text upload-heading'>{labelHeading}</p>
+                        <p className='upload-text upload-sub'>{labelSub}</p>
+                        <p className='upload-text upload-limit'>{labelLimit}</p>
+                    </div>
                 )}
             </div>
-            <p className='upload-text upload-heading'>{labelHeading}</p>
-            <p className='upload-text upload-sub'>{labelSub}</p>
-            <p className='upload-text upload-limit'>{labelLimit}</p>
+
         </>
     )
 }

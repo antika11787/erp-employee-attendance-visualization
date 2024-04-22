@@ -65,11 +65,12 @@ const ReactChart = () => {
     const month = value instanceof Date ? months[value.getMonth()] : undefined;
     const year = value instanceof Date ? value.getFullYear() : undefined;
     const formattedDate = `${year}-${month}-${Number(day ?? '01') < 10 ? '0' + (day ?? '01') : (day ?? '01')}`;
-    console.log("value", formattedDate);
 
     useEffect(() => {
-        setIsClient(true);
-    }, [])
+        if (fileId) {
+            setIsClient(true);
+        }
+    }, [fileId])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -92,12 +93,12 @@ const ReactChart = () => {
         fetchData();
     }, [value, fileId, formattedDate]);
 
-    console.log("emp", employee);
-
     useEffect(() => {
-        GetUniqueDatesApi(fileId).then((data) => {
-            setDates(data);
-        })
+        if (fileId) {
+            GetUniqueDatesApi(fileId).then((data) => {
+                setDates(data);
+            })
+        }
     }, [fileId]);
 
     useEffect(() => {

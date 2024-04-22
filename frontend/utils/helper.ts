@@ -83,7 +83,6 @@ const getMonthInNumber = (month: string): string => {
 
 
   const formatDateToDay = (value: Date): void => {
-    console.log("format", formatDateToDay(value));
 
     if (value instanceof Date) {
       const months = [
@@ -104,7 +103,6 @@ const getMonthInNumber = (month: string): string => {
       const month = months[value.getMonth()];
       const year = value.getFullYear();
       const formattedDate = `${year}-${month}-${day < 10 ? "0" + day : day}`;
-      console.log("value", formattedDate);
     }
   };
 

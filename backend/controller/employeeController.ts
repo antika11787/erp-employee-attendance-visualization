@@ -261,25 +261,6 @@ class EmployeeController {
     }
   }
 
-  // async getSingleEmployeeData(req: Request, res: Response): Promise<Response> {
-  //   try {
-  //     const { id } = req.params;
-
-  //     if (!id) {
-  //       return res.status(400).send(failure("No id provided"));
-  //     }
-
-  //     const files = await fileModel.findById(id);
-  //     if (!files) {
-  //       return res.status(400).send(failure("No data found"));
-  //     }
-
-  //   } catch (error) {
-  //     console.log(error);
-  //     return res.status(500).send(failure("Something went wrong", error));
-  //   }
-  // }
-
   async getAvgData(req: Request, res: Response): Promise<Response> {
     try {
       const { id, duration } = req.params;

@@ -48,7 +48,6 @@ const Signup = () => {
             if (response) {
                 router.push('/login');
             }
-            console.log(response);
         } catch (error) {
             console.error('Error during signup:', error);
         }

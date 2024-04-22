@@ -8,7 +8,6 @@ export const UpdateTotalEmployeeApi = async (data: any) => {
   return axiosInstanceToken
     .patch("/api/v1/employee/update-total-employees", data)
     .then((response) => {
-      console.log("response", response.data.data);
       toast.success("Updated successfully");
       return response.data.data;
     })
@@ -22,7 +21,6 @@ export const setTotalEmployeesApi = async (data: any) => {
   return axiosInstance
     .post("/api/v1/employee/set-total-employees", data)
     .then((response) => {
-      console.log("response", response.data.data);
       toast.success("Updated successfully");
       return response.data.data;
     })
@@ -36,7 +34,6 @@ export const GetTotalEmployeeApi = async () => {
   return axiosInstance
     .get("/api/v1/employee/get-total-employee")
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {
@@ -58,7 +55,6 @@ export const GetAllEmployeesApi = async (id: string, searchQuery?: string) => {
       `/api/v1/employee/get-all-employees/${id}?${queryString}`
     );
     const data = response.data;
-    console.log("items", data.data);
 
     if (data.success === false) {
       console.log("Error: ", data.message);
@@ -86,7 +82,6 @@ export const GetSingleEmployeeDataApi = async (id: string, searchQuery?: string)
       `/api/v1/employee/get-single-employee-data/${id}?${queryString}`
     );
     const data = response.data;
-    console.log("items", data.data);
 
     if (data.success === false) {
       console.log("Error: ", data.message);
@@ -104,7 +99,6 @@ export const GetEmployeeDetailsApi = async (id: string, date: any) => {
   return axiosInstanceToken
     .get(`/api/v1/employee/get-employee-details/${id}/${date}`)
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {
@@ -116,7 +110,6 @@ export const getAvgDataApi = async (id: string, duration: any) => {
   return axiosInstanceToken
     .get(`/api/v1/employee/get-average-data/${id}/${duration}`)
     .then((response) => {
-      console.log("response", response.data.data);
       return response.data.data;
     })
     .catch((error) => {

@@ -34,14 +34,14 @@ const UploadFile = () => {
                 <TbCloudUpload className='upload-icon' />
             </div>
             <div className="upload-wrapper">
-                <div className='upload-container'>
-                    <DropzoneInput
-                        labelHeading="Drag & Drop"
-                        labelSub="Your files here or browse to upload"
-                        labelLimit="Upload only excel files with max size 25 MB"
-                        setFile={setFile}
-                    />
-                </div>
+                {/* <div className='upload-container'> */}
+                <DropzoneInput
+                    labelHeading="Drag & Drop"
+                    labelSub="Your files here or browse to upload"
+                    labelLimit="Upload only excel files with max size 25 MB"
+                    setFile={setFile}
+                />
+                {/* </div> */}
                 <div className='uploaded-image'>
                     {file ? (
                         <>
@@ -63,23 +63,23 @@ const UploadFile = () => {
                                 <p className='upload-success-text'
                                     onClick={
                                         async () => {
-                                        const formData = new FormData();
-                                        formData.append("file", file);
-                                        if (!file) {
-                                            toast.error("Please select a file to upload");
-                                            return;
-                                        }
+                                            const formData = new FormData();
+                                            formData.append("file", file);
+                                            if (!file) {
+                                                toast.error("Please select a file to upload");
+                                                return;
+                                            }
 
-                                        if(!fileTypes.includes(file.name.split('.').pop())) {
-                                            toast.error("Please upload an excel file");
-                                            return;
-                                        }
+                                            if (!fileTypes.includes(file.name.split('.').pop())) {
+                                                toast.error("Please upload an excel file");
+                                                return;
+                                            }
 
-                                        const response = await UploadFileApi(formData)
-                                        localStorage.setItem("_id", response._id);
-                                        dispatch(saveFileID({ _id: response._id }));
-                                        router.push('/dashboard');
-                                    }}>Upload</p>
+                                            const response = await UploadFileApi(formData)
+                                            localStorage.setItem("_id", response._id);
+                                            dispatch(saveFileID({ _id: response._id }));
+                                            router.push('/dashboard');
+                                        }}>Upload</p>
                             </div>
                         </>
                     ) : (

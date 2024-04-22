@@ -41,7 +41,6 @@ const Login = () => {
     try {
       const response = await LoginApi(data);
       dispatch(saveLogin(response));
-      console.log(response);
       router.push("/dashboard");
     } catch (error) {
       console.error("Error during login:", error);

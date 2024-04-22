@@ -33,9 +33,7 @@ const SingleEmployeeData = () => {
             setData(employee);
         };
         fetchData();
-    }, [])
-
-    console.log("dddd", data)
+    }, [fileId])
 
     return (
         <div className="single-employee-data">
